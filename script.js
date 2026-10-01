@@ -99,9 +99,9 @@ copyButton.addEventListener("click", async () => {
   const message = `I made my choice ♡\nRestaurant: ${restaurants[selectedRestaurant].name}\nDate: ${day.label}, 2026\nTime: ${selectedTime}\n\nYour turn now, PJ :)`;
   try {
     await navigator.clipboard.writeText(message);
-    copyStatus.textContent = "Copied ♡ Now paste it into WeChat.";
+    copyStatus.textContent = "Copied :) Now paste it into Chat.";
   } catch (error) {
     window.prompt("Copy this and send it to PJ:", message);
-    copyStatus.textContent = "Ready to send ♡";
+    copyStatus.textContent = "Ready to send ";
   }
 });
