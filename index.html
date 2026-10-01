@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f0e8">
+  <meta name="description" content="A little Zürich dinner plan for Yuki.">
+  <title>For Yuki ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <div class="tiny">ZÜRICH · OCTOBER 2026</div>
+      <h1>Hi Yuki <span>♡</span></h1>
+      <p>I picked a few places for us.<br>You only have one job — choose where we're going.</p>
+      <a class="start" href="#restaurants">Choose our dinner ↓</a>
+    </header>
+
+    <section id="restaurants" class="restaurant-section">
+      <div class="section-head">
+        <div class="tiny">STEP ONE</div>
+        <h2>Pick a place.</h2>
+        <p>Tap <b>Explore</b> if you want to check the restaurant first.</p>
+      </div>
+      <div class="restaurant-grid">
+        
+<article class="restaurant-card" data-id="igniv">
+  <div class="visual visual-igniv"><span>IG</span></div>
+  <div class="card-copy">
+    <div class="kicker">Fine dining · Sharing</div>
+    <h2>IGNIV Zürich</h2>
+    <p>A refined sharing experience in the heart of Zürich Old Town.</p>
+    <div class="address">Marktgasse 17 · Zürich</div>
+    <div class="card-links">
+      <a href="https://www.marktgassehotel.ch/igniv" target="_blank" rel="noopener">Explore ↗</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=IGNIV+Zurich+Marktgasse+17+8001+Zurich" target="_blank" rel="noopener">Location ↗</a>
+    </div>
+    <button class="choose" type="button">Choose this one ♡</button>
+  </div>
+</article>
+
+<article class="restaurant-card" data-id="august">
+  <div class="visual visual-august"><span>AU</span></div>
+  <div class="card-copy">
+    <div class="kicker">Swiss brasserie</div>
+    <h2>Boucherie AuGust</h2>
+    <p>A relaxed, rustic-chic brasserie for Swiss classics and meat specialties.</p>
+    <div class="address">Rennweg 1 · Zürich</div>
+    <div class="card-links">
+      <a href="https://www.widderhotel.com/en/eat-drink/boucherie-august/" target="_blank" rel="noopener">Explore ↗</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Boucherie+AuGust+Rennweg+1+8001+Zurich" target="_blank" rel="noopener">Location ↗</a>
+    </div>
+    <button class="choose" type="button">Choose this one ♡</button>
+  </div>
+</article>
+
+<article class="restaurant-card" data-id="oldinn">
+  <div class="visual visual-oldinn"><span>OI</span></div>
+  <div class="card-copy">
+    <div class="kicker">Contemporary European</div>
+    <h2>Old Inn</h2>
+    <p>Creative contemporary cooking in Zürich's distinctive Chachelihuus.</p>
+    <div class="address">Bleicherweg 47 · Zürich</div>
+    <div class="card-links">
+      <a href="https://theoldinn.ch/" target="_blank" rel="noopener">Explore ↗</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Old+Inn+Bleicherweg+47+8002+Zurich" target="_blank" rel="noopener">Location ↗</a>
+    </div>
+    <button class="choose" type="button">Choose this one ♡</button>
+  </div>
+</article>
+
+<article class="restaurant-card" data-id="fujiya">
+  <div class="visual visual-fujiya"><span>FJ</span></div>
+  <div class="card-copy">
+    <div class="kicker">Japanese · Teppanyaki</div>
+    <h2>Fujiya of Japan</h2>
+    <p>Teppanyaki prepared right in front of you, plus sushi and sashimi.</p>
+    <div class="address">Zürich</div>
+    <div class="card-links">
+      <a href="https://fujiyarestaurant.ch/index.html" target="_blank" rel="noopener">Explore ↗</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Fujiya+of+Japan+Zurich" target="_blank" rel="noopener">Location ↗</a>
+    </div>
+    <button class="choose" type="button">Choose this one ♡</button>
+  </div>
+</article>
+
+<article class="restaurant-card" data-id="seam">
+  <div class="visual visual-seam"><span>KS</span></div>
+  <div class="card-copy">
+    <div class="kicker">Japanese · Kappo</div>
+    <h2>Kappo SEAM</h2>
+    <p>An intimate seasonal Japanese experience built around precision and proximity.</p>
+    <div class="address">Löwenstrasse 29 · Zürich</div>
+    <div class="card-links">
+      <a href="https://kappo-seam.ch/" target="_blank" rel="noopener">Explore ↗</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Kappo+SEAM+Lowenstrasse+29+Zurich" target="_blank" rel="noopener">Location ↗</a>
+    </div>
+    <button class="choose" type="button">Choose this one ♡</button>
+  </div>
+</article>
+      </div>
+    </section>
+
+    <section id="picker" class="picker hidden" aria-live="polite">
+      <div class="tiny">STEP TWO</div>
+      <h2>Good choice <span>♡</span></h2>
+      <p id="picked-copy"></p>
+
+      <div class="choice-group">
+        <div class="label">When?</div>
+        <div id="dates" class="choices"></div>
+      </div>
+
+      <div id="time-block" class="choice-group hidden">
+        <div class="label">What time?</div>
+        <div id="times" class="choices"></div>
+      </div>
+
+      <div id="final" class="final hidden">
+        <div class="tiny">YOUR DATE</div>
+        <div id="summary" class="summary"></div>
+        <button id="copy" type="button">Copy my choice 💌</button>
+        <div id="copy-status" class="copy-status" aria-live="polite"></div>
+        <div class="note">This doesn't book the restaurant — send your choice to PJ and he'll take care of the rest.</div>
+      </div>
+    </section>
+
+    <footer>Made for Yuki, with questionable amounts of planning ♡</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
